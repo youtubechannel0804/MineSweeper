@@ -19,6 +19,16 @@ Game Rules:
   * If neighbour cells' total flag count equals to this multi-clicked cell's count and at least one predicted mine location       is wrong, game ends with FAIL.
 6.If all cells (without mines) are opened using left clicks and/or multi-clicks, game ends with SUCCESS.
 
+Approach:
+1.  create board
+  *  set 0 for all cells.
+  *  place mine (place -1 in the cell)
+  *  place numbers of another cell which doesnt have mine. Place 0 if cell is empty
+2. user action
+  * left click
+  * right click
+3. Keep one flag when game is over. Always check when get input from user.
+
 Refrences :
 1. http://www.eecs.qmul.ac.uk/~mmh/ItP/resources/MineSweeper/Notes.html
 2. http://codebuild.blogspot.in/2015/01/algorithms-explained-minesweeper-game.html
